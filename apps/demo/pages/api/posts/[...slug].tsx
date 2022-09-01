@@ -4,7 +4,7 @@ import {resolve} from 'path';
 import {NextApiRequest, NextApiResponse} from 'next';
 
 export default async function getPosts(req: NextApiRequest, res: NextApiResponse) {
-  const { method, query } = req;
+  const { method } = req;
 
   switch (method) {
     case 'GET':
